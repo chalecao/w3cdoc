@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # 如果是发布到自定义域名
-echo 'w3cdoc.com' > CNAME
+# echo 'w3cdoc.com' > ./dist/CNAME
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -11,7 +11,7 @@ dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
 
 # 生成静态文件
-npm run build
+# npm run build
 
 # 进入生成的文件夹
 cd $dist_path
